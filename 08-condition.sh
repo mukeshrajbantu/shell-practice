@@ -8,7 +8,7 @@ NUMBER=$1
 #-ne = not equal
 #-le = less than or equal to
 
-if [ $NUMBER -ge 20 ]; then
+if [ $NUMBER -gt 20 ]; then
     echo "Given number $NUMBER is greater than or equal to 20"
     else
     echo "Given number $NUMBER is less than 20"
