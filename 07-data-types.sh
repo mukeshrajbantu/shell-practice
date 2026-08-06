@@ -15,3 +15,9 @@ MOVIES=("RRR" "VARANASI" "PUSHPA") #index always starts from 0.
 echo "Movies are: ${MOVIES[@]}" #@ is for all
 #The square braceses we can give positionig or indexing.
 #to access all movies.
+echo "First movie is: ${MOVIES[0]}"
+#So if we need the 1st positioning it would be from 0.
+echo "Second movie is: ${MOVIES[1]}"
+echo "Third movie is: ${MOVIES[2]}"
+
+
