@@ -4,5 +4,5 @@ $@ #all variables passed to the script, in shell variables start with "$".
 echo "All variables passed to script: $@"
 echo "Number of variables passed: $#"
 echo "First variable: $1"
-echo "Last variable: $n"
+echo "Second variable: $2"
 echo "Script name: $0"
