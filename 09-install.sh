@@ -8,7 +8,7 @@ if [ $USERID -ne 0 ]; then
 fi
     #echo "I'm continuing" 
     echo "Install MySQL"
-    dnf isntall mysql -y 
+    dnf install mysql -y 
 if [ $? -ne 0 ]; then 
     echo "Insatalling MySQL is..... FAILED"
     exit 1
