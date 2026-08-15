@@ -19,5 +19,7 @@ echo "First movie is: ${MOVIES[0]}"
 #So if we need the 1st positioning it would be from 0.
 echo "Second movie is: ${MOVIES[1]}"
 echo "Third movie is: ${MOVIES[2]}"
-
+#So in this form array would be useful in shell.
+#And can hold multiple values.
+#Shell by default treats everthing as string.
 
