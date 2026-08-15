@@ -1,8 +1,8 @@
 #!/bin/bash
 
-TIMESTAMP=$(date)  #here date is command and TIMESTAMP is variable.
+# TIMESTAMP=$(date)  #here date is command and TIMESTAMP is variable.
 
-echo "Time is: $TIMESTAMP"
+# echo "Time is: $TIMESTAMP"
 
 START_TIME=$(date +%s)
 
