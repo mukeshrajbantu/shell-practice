@@ -5,6 +5,8 @@ TIMESTAMP=$(date)  #here date is command and TIMESTAMP is variable.
 echo "Time is: $TIMESTAMP"
 
 START_TIME=$(date +%s)
+
+
 sleep 10
 
 
