@@ -11,4 +11,4 @@ sleep 6
 END_TIME=$(date +%s)
 
 TOTAL_TIME=$(($END_TIME-$START_TIME))
-echo "Script execution :: $TOTAL_TIME"
+echo "Script execution is : $TOTAL_TIME seconds."
