@@ -16,5 +16,5 @@ wait $!
 echo "Line number: $LINENO"
 echo "Script executed $SECONDS seconds"
 echo "Random number is: $RANDOM"
-# gcghdjdshfsdkfb
+gcghdjdshfsdkfb
 echo "Exit code of the previous command: $?"
