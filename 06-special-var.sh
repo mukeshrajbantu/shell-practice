@@ -7,7 +7,7 @@ echo "First variable: $1"
 echo "Second variable: $2"
 echo "Script name: $0"
 echo "Who is running this: $USER"
-# echo "Which directory: $PWD"
+echo "Which directory: $PWD"
 # echo "Home directory: $HOME"
 # echo "PID of the current script: $$"
 # sleep 5&
