@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUMBER=$1
+NUMBER=$100
 #-gt = greater than 
 #-ge = greater than equal to
 #-lt = less than
