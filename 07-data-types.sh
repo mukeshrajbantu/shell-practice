@@ -7,19 +7,19 @@ SUM=$(($NUM1+$NUM2))
 #one bracket for arthimetical operations and other once is to execute.
 echo "Sum is: $SUM"
 #Just variable name has been given.
-#ARRAY
-MOVIES=("RRR" "VARANASI" "PUSHPA") #index always starts from 0.
-#movies is variable and the movie names are values.
-#so the value's 1st position always starts from 0 = RRR and so on...
-#The positionning would be done by zero but the number would start from 1,2,3..
-echo "Movies are: ${MOVIES[@]}" #@ is for all
-#The square braceses we can give positionig or indexing.
-#to access all movies.
-echo "First movie is: ${MOVIES[0]}"
-#So if we need the 1st positioning it would be from 0.
-echo "Second movie is: ${MOVIES[1]}"
-echo "Third movie is: ${MOVIES[2]}"
-#So in this form array would be useful in shell.
-#And can hold multiple values.
-#Shell by default treats everthing as string.
+# #ARRAY
+# MOVIES=("RRR" "VARANASI" "PUSHPA") #index always starts from 0.
+# #movies is variable and the movie names are values.
+# #so the value's 1st position always starts from 0 = RRR and so on...
+# #The positionning would be done by zero but the number would start from 1,2,3..
+# echo "Movies are: ${MOVIES[@]}" #@ is for all
+# #The square braceses we can give positionig or indexing.
+# #to access all movies.
+# echo "First movie is: ${MOVIES[0]}"
+# #So if we need the 1st positioning it would be from 0.
+# echo "Second movie is: ${MOVIES[1]}"
+# echo "Third movie is: ${MOVIES[2]}"
+# #So in this form array would be useful in shell.
+# #And can hold multiple values.
+# #Shell by default treats everthing as string.
 
