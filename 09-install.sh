@@ -20,7 +20,7 @@ else
 fi
 fi
 
-
+    echo "I'm continuing"
     dnf list installed nginx
 if [ $? -eq 0 ]; then
     echo "Nginx is already installed...SKIPPING"
