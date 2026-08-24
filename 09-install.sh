@@ -17,12 +17,12 @@
 # fi
 USERID=$(id -u) #condition
 if [ $USERID -ne 0 ]; then
-    echo "Please run the script with root access"
+    echo "Please run the script with root access")
     exit 1
 fi
     echo "I'm continuing"
     echo "Intall MySQL"
-    dnf instl mysql -y
+    dnf install mysql -y
 if [ $? -ne 0 ]; then 
     echo "Installing mysql is ... FAILED"
     exit 1
