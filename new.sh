@@ -7,7 +7,7 @@ fi
 
     #echo "I'm continuing..."
 echo "Installing MySQL"
-dnf install sssmysql -y 
+dnf install mysql -y 
 #to check if mysql is success or not
 if [ $? -ne 0 ]; then 
     echo "Installing MySQL is... FAILED"
