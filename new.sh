@@ -5,4 +5,13 @@ if [ $USERID -ne 0 ]; then
     exit 1
 fi
 
-    echo "I'm continuing..."
+    #echo "I'm continuing..."
+echo "Installing MySQL"
+dnf install mysql -y 
+#to check if mysql is success or not
+if [ $? -ne 0 ]; then 
+    echo "Installing MySQL is... FAILED"
+    exit 1
+    else 
+    echo "Installing MySQL is... SUCCESS"
+fi
