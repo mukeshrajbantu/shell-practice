@@ -18,6 +18,7 @@ if [ $? -ne 0 ]; then
     echo "Installing MySQL"
 fi
 dnf install mysql -y
+
 if [ $? -ne 0 ]; then
     echo "Installing nginx is... FAILED"            #checking whether mysql is already installed or not.
     exit 1
