@@ -29,6 +29,7 @@ for package in $@
         else
         dnf install $package -y &>> $LOGS_FILE
         VALIDATE "Installing $package" $?
+        fi
     done 
 #     echo "I'm continuing"
 #     dnf list installed mysql
