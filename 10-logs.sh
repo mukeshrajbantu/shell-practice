@@ -1,6 +1,6 @@
 #!/bin/bash
 USERID=$(id -u) #condition
-LOGS_DIR=/home/ec2-user/shell-logs
+LOGS_DIR=/var/log/shell-script
 LOGS_FILE="$LOG_DIR/$0.log"  #/home/ec2-user/shell-logs/10-logs.sh.log
 if [ $USERID -ne 0 ]; then
     echo "Please run the script with root access"
