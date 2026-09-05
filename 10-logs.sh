@@ -11,18 +11,18 @@ fi
 #second arg= exit code
 VALIDATE(){
     if [ $2 -ne 0 ]; then 
-    echo "Installing $1 is ... FAILED"
+    echo "Installing $1 is ... FAILED" | tee -a $LOGS_FILE
     exit 1
 else 
-    echo "Installing $1 is ..... SUCCESS"
+    echo "Installing $1 is ..... SUCCESS" | tee -a $LOGS_FILE
 fi
 }
     #echo "I'm continuing"
     dnf list installed mysql &>> $LOGS_FILE
 if [ $? -eq 0 ]; then
-    echo "MySQL is already isntalled.... SKIPPING"
+    echo "MySQL is already isntalled.... SKIPPING" | tee -a $LOGS_FILE
 else
-    echo "Install MySQL"
+    echo "Install MySQL" 
     dnf install mysql -y &>> $LOGS_FILE
 VALIDATE MySQL $?
 fi
@@ -30,9 +30,9 @@ fi
     #echo "I'm continuing"
     dnf list installed nginx &>> $LOGS_FILE
 if [ $? -eq 0 ]; then
-    echo "Nginx is already installed...SKIPPING"
+    echo "Nginx is already installed...SKIPPING" | tee -a $LOGS_FILE
 else 
-    echo "Insatlling nginx"
+    echo "Insatlling nginx" |
     dnf install nginx -y  &>> $LOGS_FILE
 VALIDATE nginx $?
 fi
