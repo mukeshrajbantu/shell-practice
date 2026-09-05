@@ -23,7 +23,7 @@ fi
 for package in $@
     do
         echo "Installing $package"
-        dnf list installed $package 
+        dnf list installed $package &>> $LOGS_FILE
         if [ $? -ne 0 ]; then
         echo "$package already installed...SKIPPING"
         else
