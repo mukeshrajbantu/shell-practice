@@ -4,7 +4,7 @@ set -e  #this is a signal to indicate error.
 USERID=$(id -u) #condition
 LOGS_DIR=/var/log/shell-script
 LOGS_FILE="$LOG_DIR/$0.log" 
-TIMESTAMP=$(date +%Y-%m-%d %H:%M:%S)
+TIMESTAMP=$(date "+%Y-%m-%d %H:%M:%S")
 R="\e[30m"  #-e on every statement to enable the colors.
 G="\e[31m"
 Y="\e[32m"
